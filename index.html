@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Jaguars - Premier Youth Soccer Team | Ages 7-12</title>
+    <meta name="description" content="Join FC Jaguars, the Winter League 2024-25 Champions! Youth soccer team for boys and girls ages 7-12, all skill levels welcome. Located in Germantown, MD.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'jaguar-gold': '#FFD700',
+                        'jaguar-black': '#1A1A1A',
+                        'jaguar-red': '#DC2626',
+                        'jaguar-orange': '#FF8C00'
+                    },
+                    fontFamily: {
+                        'display': ['Georgia', 'serif'],
+                        'body': ['Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: #FFFFFF; 
+        }
+        .section-gradient {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-body bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-jaguar-red to-red-700 shadow-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <img src="images/fc-jaguars-logo.jpg" alt="FC Jaguars Logo" class="h-10 w-10 rounded-full mr-3">
+                    <div class="flex flex-col">
+                        <span class="text-white font-display text-xl font-bold">FC JAGUARS</span>
+                        <span class="text-jaguar-gold font-display text-sm font-bold">MARYLAND</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-white hover:text-jaguar-gold px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-white hover:text-jaguar-gold px-3 py-2 text-sm font-medium transition-colors">About Us</a>
+                        <a href="#programs" class="text-white hover:text-jaguar-gold px-3 py-2 text-sm font-medium transition-colors">Programs</a>
+                        <a href="#tryouts" class="text-white hover:text-jaguar-gold px-3 py-2 text-sm font-medium transition-colors">Tryouts</a>
+                        <a href="#contact" class="text-white hover:text-jaguar-gold px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-jaguar-gold">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-jaguar-black">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="text-white hover:text-jaguar-gold block px-3 py-2 text-base font-medium">Home</a>
+                <a href="#about" class="text-white hover:text-jaguar-gold block px-3 py-2 text-base font-medium">About Us</a>
+                <a href="#programs" class="text-white hover:text-jaguar-gold block px-3 py-2 text-base font-medium">Programs</a>
+                <a href="#tryouts" class="text-white hover:text-jaguar-gold block px-3 py-2 text-base font-medium">Tryouts</a>
+                <a href="#contact" class="text-white hover:text-jaguar-gold block px-3 py-2 text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-16 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="mb-6">
+                        <span class="inline-block bg-jaguar-gold text-jaguar-black px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wide">
+                            🏆 WINNER WINTER LEAGUE 2024-25
+                        </span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl font-display font-bold text-black mb-6">
+                        Welcome to 
+                    </h1>
+                    <div class="text-5xl md:text-7xl font-display font-black mb-6">
+                        <div class="text-jaguar-red drop-shadow-2xl">FC JAGUARS</div>
+                        <div class="text-jaguar-gold drop-shadow-2xl">MARYLAND</div>
+                    </div>
+                    <p class="text-xl text-black-200 mb-8 leading-relaxed">
+                        Premier youth soccer team for boys and girls ages 7-12. All skill levels welcome! 
+                        Join our championship team and discover the joy of soccer with professional coaching and team building.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#tryouts" class="bg-jaguar-gold text-jaguar-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors inline-flex items-center justify-center">
+                            <i class="fas fa-futbol mr-2"></i>
+                            Register for Tryouts
+                        </a>
+                        <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-jaguar-black transition-colors inline-flex items-center justify-center">
+                            <i class="fas fa-phone mr-2"></i>
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <img src="images/team-celebration.jpg" alt="FC Jaguars Championship Celebration" class="rounded-xl shadow-2xl w-full max-w-lg mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-jaguar-black mb-4">About FC Jaguars</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We are more than just a soccer team - we're a family dedicated to developing young athletes 
+                    through professional coaching, skill development, and character building.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="text-center p-8 bg-gradient-to-br from-jaguar-red to-red-600 rounded-xl text-white card-hover">
+                    <i class="fas fa-trophy text-4xl mb-4 text-jaguar-gold"></i>
+                    <h3 class="text-xl font-bold mb-4">Championship Team</h3>
+                    <p>Proud winners of the Winter League 2024-25, proving our commitment to excellence.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-gradient-to-br from-jaguar-gold to-yellow-500 rounded-xl text-jaguar-black card-hover">
+                    <i class="fas fa-users text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-4">Inclusive Environment</h3>
+                    <p>Boys and girls ages 7-12, all skill levels welcome. Everyone has a place on our team.</p>
+                </div>
+                
+                <div class="text-center p-8 bg-gradient-to-br from-jaguar-black to-gray-800 rounded-xl text-white card-hover">
+                    <i class="fas fa-chalkboard-teacher text-4xl mb-4 text-jaguar-gold"></i>
+                    <h3 class="text-xl font-bold mb-4">Professional Coaching</h3>
+                    <p>Experienced coaches dedicated to developing each player's skills and love for the game.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="images/team-huddle-field.jpg" alt="Team huddle on the field" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div>
+                    <h3 class="text-3xl font-display font-bold text-jaguar-black mb-6">Our Mission</h3>
+                    <p class="text-lg text-gray-700 mb-6">
+                        At FC Jaguars, we believe soccer is more than just a game. It's about building confidence, 
+                        teamwork, and lifelong friendships while developing athletic skills and sportsmanship.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-jaguar-red mr-3"></i>
+                            <span>Compete, train, and grow with a top-tier team</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-jaguar-red mr-3"></i>
+                            <span>Prepare for tournament and league play</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check-circle text-jaguar-red mr-3"></i>
+                            <span>Build lasting friendships and memories</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 section-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-jaguar-black mb-4">Our Programs</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Discover our comprehensive programs designed to develop young soccer players at every level.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Summer Soccer Program -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-sun text-3xl text-jaguar-orange mr-4"></i>
+                            <h3 class="text-2xl font-display font-bold text-jaguar-black">Summer Soccer Program</h3>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            Join us for an unforgettable summer of soccer fun! Our comprehensive summer program 
+                            combines skill development with team building in a supportive environment.
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-star text-jaguar-gold mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-jaguar-black">Professional Coaching</h4>
+                                    <p class="text-gray-600">Expert instruction from certified coaches</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-futbol text-jaguar-red mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-jaguar-black">Skill Development</h4>
+                                    <p class="text-gray-600">Focus on fundamental skills and techniques</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-handshake text-jaguar-orange mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-jaguar-black">Team Building</h4>
+                                    <p class="text-gray-600">Activities that build camaraderie and teamwork</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-jaguar-gold bg-opacity-20 p-4 rounded-lg mb-6">
+                            <p class="text-sm font-bold text-jaguar-black">
+                                <i class="fas fa-clock mr-2"></i>
+                                Early Bird Discount Available - Register Early!
+                            </p>
+                        </div>
+
+                        <div class="w-full bg-jaguar-orange text-white px-6 py-3 rounded-lg font-bold transition-colors">
+                            Learn More About Summer Program
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fall Season Program -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-6">
+                            <i class="fas fa-trophy text-3xl text-jaguar-gold mr-4"></i>
+                            <h3 class="text-2xl font-display font-bold text-jaguar-black">Fall Season Program</h3>
+                        </div>
+                        <p class="text-gray-700 mb-6">
+                            Our competitive fall season prepares players for tournament and league play. 
+                            Join the defending Winter League Champions!
+                        </p>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-medal text-jaguar-gold mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-jaguar-black">Tournament Play</h4>
+                                    <p class="text-gray-600">Compete in local and regional tournaments</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-calendar-alt text-jaguar-red mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-jaguar-black">League Competition</h4>
+                                    <p class="text-gray-600">Regular season games and championship pursuit</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-arrow-up text-jaguar-orange mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold text-jaguar-black">Advanced Training</h4>
+                                    <p class="text-gray-600">Intensive skill development and game preparation</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-jaguar-red bg-opacity-20 p-4 rounded-lg mb-6">
+                            <p class="text-sm font-bold text-jaguar-black">
+                                <i class="fas fa-crown mr-2"></i>
+                                Current Winter League Champions 2024-25!
+                            </p>
+                        </div>
+
+                        <div class="w-full bg-jaguar-red text-white px-6 py-3 rounded-lg font-bold hover:bg-red-600 transition-colors">
+                            Join Our Championship Team
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tryouts Section -->
+    <section id="tryouts" class="py-20 bg-jaguar-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-jaguar-gold mb-4">Open Tryouts</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Ready to join the FC Jaguars family? Our open tryouts welcome all skill levels. 
+                    Come show us your passion for the game!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm">
+                        <h3 class="text-3xl font-display font-bold text-jaguar-gold mb-6">Tryout Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-calendar text-jaguar-gold mr-4 mt-1 text-xl"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Dates</h4>
+                                    <p class="text-lg">Tuesday and Thursday</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-jaguar-gold mr-4 mt-1 text-xl"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Time</h4>
+                                    <p class="text-lg">6:00 PM – 7:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-jaguar-gold mr-4 mt-1 text-xl"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Location</h4>
+                                    <p class="text-lg">William Gibbs Elementary School</p>
+                                    <p class="text-gray-300">12615 Royal Crown Dr.<br>Germantown, MD</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-users text-jaguar-gold mr-4 mt-1 text-xl"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Who Can Join</h4>
+                                    <p class="text-lg">Boys & Girls Ages 7-12</p>
+                                    <p class="text-gray-300">All skill levels welcome!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <img src="images/team-photo.jpg" alt="FC Jaguars Team Photo" class="rounded-xl shadow-2xl w-full mb-8">
+                    
+                    <div class="space-y-4">
+                        <a href="tel:7819858786" class="block w-full bg-jaguar-gold text-jaguar-black px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-400 transition-colors">
+                            <i class="fas fa-phone mr-2"></i>
+                            Call to Register: (781) 985-8786
+                        </a>
+                        <a href="mailto:fcjaguarsmaryland@gmail.com" class="block w-full border-2 border-jaguar-gold text-jaguar-gold px-8 py-4 rounded-lg font-bold text-lg hover:bg-jaguar-gold hover:text-jaguar-black transition-colors">
+                            <i class="fas fa-envelope mr-2"></i>
+                            Email Us Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <div class="bg-jaguar-red bg-opacity-20 rounded-xl p-8 max-w-3xl mx-auto">
+                    <h3 class="text-2xl font-bold text-jaguar-gold mb-4">What to Bring</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                        <div>
+                            <i class="fas fa-tshirt text-3xl text-jaguar-gold mb-2"></i>
+                            <p>Athletic Clothing</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-futbol text-3xl text-jaguar-gold mb-2"></i>
+                            <p>Soccer Ball</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-shoe-prints text-3xl text-jaguar-gold mb-2"></i>
+                            <p>Soccer Cleats</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+                        <div>
+                            <i class="fas fa-tint text-3xl text-jaguar-gold mb-2"></i>
+                            <p>Water Bottle</p>
+                        </div>
+                        <div>
+                            <i class="fas fa-smile text-3xl text-jaguar-gold mb-2"></i>
+                            <p>Positive Attitude</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-display font-bold text-jaguar-black mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Have questions? Ready to join the FC Jaguars family? We'd love to hear from you!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-gradient-to-br from-jaguar-black to-gray-800 text-white rounded-xl p-8">
+                        <h3 class="text-2xl font-bold text-jaguar-gold mb-6">Get in Touch</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-jaguar-gold text-xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold">Phone</h4>
+                                    <a href="tel:7819858786" class="text-lg hover:text-jaguar-gold transition-colors">(781) 985-8786</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-jaguar-gold text-xl mr-4"></i>
+                                <div>
+                                    <h4 class="font-bold">Email</h4>
+                                    <a href="mailto:fcjaguarsmaryland@gmail.com" class="text-lg hover:text-jaguar-gold transition-colors">fcjaguarsmaryland@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-jaguar-gold text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-bold">Training Location</h4>
+                                    <p class="text-lg">William Gibbs Elementary School</p>
+                                    <p class="text-gray-300">12615 Royal Crown Dr.<br>Germantown, MD</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-8 border-t border-gray-600">
+                            <h4 class="text-lg font-bold text-jaguar-gold mb-4">Follow Our Journey</h4>
+                            <p class="text-gray-300">Stay updated with team news, game schedules, and player achievements!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <form class="bg-gray-50 rounded-xl p-8">
+                        <h3 class="text-2xl font-bold text-jaguar-black mb-6">Send us a Message</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jaguar-red focus:border-transparent" required>
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jaguar-red focus:border-transparent" required>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jaguar-red focus:border-transparent" required>
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jaguar-red focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label for="child-age" class="block text-sm font-medium text-gray-700 mb-2">Child's Age</label>
+                                <select id="child-age" name="child-age" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jaguar-red focus:border-transparent">
+                                    <option value="">Select Age</option>
+                                    <option value="7">7 years old</option>
+                                    <option value="8">8 years old</option>
+                                    <option value="9">9 years old</option>
+                                    <option value="10">10 years old</option>
+                                    <option value="11">11 years old</option>
+                                    <option value="12">12 years old</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-jaguar-red focus:border-transparent" placeholder="Tell us about your child's soccer experience or any questions you have..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-jaguar-red text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-red-600 transition-colors">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-jaguar-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="images/fc-jaguars-logo.jpg" alt="FC Jaguars Logo" class="h-8 w-8 rounded-full mr-3">
+                        <span class="text-jaguar-gold font-display text-xl font-bold">FC JAGUARS</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Winter League Champions 2024-25. Building champions on and off the field.
+                    </p>
+                    <div class="flex space-x-4">
+                        <span class="text-jaguar-gold">🏆 Champions</span>
+                        <span class="text-jaguar-gold">⚽ Ages 7-12</span>
+                        <span class="text-jaguar-gold">🌟 All Levels</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-jaguar-gold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-jaguar-gold transition-colors">About Us</a></li>
+                        <li><a href="#programs" class="text-gray-300 hover:text-jaguar-gold transition-colors">Programs</a></li>
+                        <li><a href="#tryouts" class="text-gray-300 hover:text-jaguar-gold transition-colors">Tryouts</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-jaguar-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-jaguar-gold mb-4">Contact Info</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">
+                            <i class="fas fa-phone mr-2"></i>
+                            <a href="tel:7819858786" class="hover:text-jaguar-gold transition-colors">(781) 985-8786</a>
+                        </li>
+                        <li class="text-gray-300">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:fcjaguarsmaryland@gmail.com" class="hover:text-jaguar-gold transition-colors">fcjaguarsmaryland@gmail.com</a>
+                        </li>
+                        <li class="text-gray-300">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            Germantown, MD
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2025 FC Jaguars. All rights reserved. | Building champions through soccer.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Add animation on scroll
+        window.addEventListener('scroll', function() {
+            const cards = document.querySelectorAll('.card-hover');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const cardVisible = 150;
+                
+                if (cardTop < window.innerHeight - cardVisible) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+
+<style>
+#minimax-floating-ball {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 12px;
+  background: #222222;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  color: #F8F8F8;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  z-index: 9999;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#minimax-floating-ball:hover {
+  transform: translateY(-2px);
+  background: #383838;
+}
+
+.minimax-ball-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.minimax-logo-wave {
+  width: 26px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.minimax-ball-text {
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.minimax-close-icon {
+  margin-left: 8px;
+  font-size: 16px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.minimax-close-icon:hover {
+  opacity: 1;
+}
+</style>
+<!-- <div id="minimax-floating-ball">
+  <div class="minimax-ball-content">
+    <div class="minimax-logo-wave"></div>
+    <span class="minimax-ball-text">Created by MiniMax Agent</span>
+  </div>
+  <div class="minimax-close-icon">×</div>
+</div> -->
+<script>
+// Initialize floating ball functionality
+function initFloatingBall() {
+  const ball = document.getElementById('minimax-floating-ball');
+  if (!ball) return;
+
+  // Initial animation
+  ball.style.opacity = '0';
+  ball.style.transform = 'translateY(20px)';
+
+  setTimeout(() => {
+    ball.style.opacity = '1';
+    ball.style.transform = 'translateY(0)';
+  }, 500);
+
+  // Handle logo click
+  const ballContent = ball.querySelector('.minimax-ball-content');
+  ballContent.addEventListener('click', function (e) {
+    e.stopPropagation();
+    window.open('https://agent.minimax.io/agent', '_blank');
+    ball.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+      ball.style.transform = 'scale(1)';
+    }, 100);
+  });
+
+  // Handle close button click
+  const closeIcon = ball.querySelector('.minimax-close-icon');
+  closeIcon.addEventListener('click', function (e) {
+    e.stopPropagation();
+    ball.style.opacity = '0';
+    ball.style.transform = 'translateY(20px)';
+
+    setTimeout(() => {
+      ball.style.display = 'none';
+    }, 300);
+  });
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', initFloatingBall); 
+</script>
+
+</body>
+</html>
